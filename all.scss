@@ -1,0 +1,172 @@
+$bgColor: rgba(222, 241, 247, 0.8);
+$gColor: rgba(203, 204, 203, 0.8);
+
+body {
+    font-family: 微軟正黑體;
+}
+
+.card {
+    background-color: $bgColor;
+    border: 0;
+    border-radius: 20px;
+}
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+    margin: 0;
+}
+.big {
+    font-size: 70px;
+}
+.gray {
+    background-color: $gColor;
+}
+.bg-color {
+    background-color: $bgColor;
+}
+.g-color {
+    background-color: $gColor;
+}
+
+//表格圓角
+table {
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+/*第一欄第一列：左上*/
+tr:first-child td:first-child {
+    border-top-left-radius: 20px;
+}
+/*第一欄最後列：左下*/
+tr:last-child td:first-child {
+    border-bottom-left-radius: 20px;
+}
+/*最後欄第一列：右上*/
+tr:first-child td:last-child {
+    border-top-right-radius: 20px;
+}
+/*最後欄第一列：右下*/
+tr:last-child td:last-child {
+    border-bottom-right-radius: 20px;
+}
+
+/* Animation */
+@keyframes fadeInUp {
+    from {
+        transform: translate3d(0, 40px, 0);
+    }
+    to {
+        transform: translate3d(0, 0, 0);
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeInUp {
+    from {
+        transform: translate3d(0, 40px, 0);
+    }
+    to {
+        transform: translate3d(0, 0, 0);
+        opacity: 1;
+    }
+}
+
+.animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+}
+
+.animatedFadeInUp {
+    opacity: 0;
+}
+
+.fadeInUp {
+    opacity: 0;
+    animation-name: fadeInUp;
+    -webkit-animation-name: fadeInUp;
+}
+
+//loader
+.cloud {
+    background-color: rgb(195, 225, 238);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#fluffy-cloud {
+    animation: float 2.3s infinite linear;
+}
+
+#shadow {
+    width: 100px;
+    height: 16px;
+    border-radius: 100%;
+    margin-top: 8px;
+    background-color: black;
+    opacity: 0.1;
+    animation: change-size 2.3s infinite linear;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-7px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+@keyframes change-size {
+    50% {
+        transform: scaleX(0.8);
+    }
+}
+
+//背景
+.sun {
+    background-image: url(img/sun1.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.rain {
+    background: url(img/rain.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.thunder {
+    background-image: url(img/thunder1.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.fog {
+    background-image: url(img/fog.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.bg-cloud {
+    background-image: url(img/sun2.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}

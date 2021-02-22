@@ -1,0 +1,217 @@
+@charset "UTF-8";
+body {
+  font-family: 微軟正黑體;
+}
+
+.card {
+  background-color: rgba(222, 241, 247, 0.8);
+  border: 0;
+  border-radius: 20px;
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  margin: 0;
+}
+
+.big {
+  font-size: 70px;
+}
+
+.gray {
+  background-color: rgba(203, 204, 203, 0.8);
+}
+
+.bg-color {
+  background-color: rgba(222, 241, 247, 0.8);
+}
+
+.g-color {
+  background-color: rgba(203, 204, 203, 0.8);
+}
+
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+/*第一欄第一列：左上*/
+tr:first-child td:first-child {
+  border-top-left-radius: 20px;
+}
+
+/*第一欄最後列：左下*/
+tr:last-child td:first-child {
+  border-bottom-left-radius: 20px;
+}
+
+/*最後欄第一列：右上*/
+tr:first-child td:last-child {
+  border-top-right-radius: 20px;
+}
+
+/*最後欄第一列：右下*/
+tr:last-child td:last-child {
+  border-bottom-right-radius: 20px;
+}
+
+/* Animation */
+@keyframes fadeInUp {
+  from {
+    -webkit-transform: translate3d(0, 40px, 0);
+            transform: translate3d(0, 40px, 0);
+  }
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeInUp {
+  from {
+    -webkit-transform: translate3d(0, 40px, 0);
+            transform: translate3d(0, 40px, 0);
+  }
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
+.animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+}
+
+.animatedFadeInUp {
+  opacity: 0;
+}
+
+.fadeInUp {
+  opacity: 0;
+  animation-name: fadeInUp;
+  -webkit-animation-name: fadeInUp;
+}
+
+.cloud {
+  background-color: #c3e1ee;
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#fluffy-cloud {
+  -webkit-animation: float 2.3s infinite linear;
+          animation: float 2.3s infinite linear;
+}
+
+#shadow {
+  width: 100px;
+  height: 16px;
+  border-radius: 100%;
+  margin-top: 8px;
+  background-color: black;
+  opacity: 0.1;
+  -webkit-animation: change-size 2.3s infinite linear;
+          animation: change-size 2.3s infinite linear;
+}
+
+@-webkit-keyframes float {
+  0% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  50% {
+    -webkit-transform: translateY(-7px);
+            transform: translateY(-7px);
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
+@keyframes float {
+  0% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  50% {
+    -webkit-transform: translateY(-7px);
+            transform: translateY(-7px);
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
+@-webkit-keyframes change-size {
+  50% {
+    -webkit-transform: scaleX(0.8);
+            transform: scaleX(0.8);
+  }
+}
+
+@keyframes change-size {
+  50% {
+    -webkit-transform: scaleX(0.8);
+            transform: scaleX(0.8);
+  }
+}
+
+.sun {
+  background-image: url(img/sun1.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+.rain {
+  background: url(img/rain.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+.thunder {
+  background-image: url(img/thunder1.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+.fog {
+  background-image: url(img/fog.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+.bg-cloud {
+  background-image: url(img/sun2.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+/*# sourceMappingURL=all.css.map */
