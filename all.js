@@ -15,7 +15,6 @@ const immediate = document.querySelector('.immediate');
             return data;
             
         })
-        console.log(api.location);
 
     const lat = `&lat=${api.location.lat}`;
     const lng = `&lon=${api.location.lng}`;
@@ -131,13 +130,13 @@ const immediate = document.querySelector('.immediate');
             <hr style="background-color:#000;"/>
             <div class="body">
               <div class="row">
-                <div class="col-6 d-flex flex-column px-0 pl-4">
+                <div class="col-5 d-flex flex-column px-0 pl-4">
                     <span>${date}</span>
                     <span>星期${day_list[day]}</span>
                     <span class="pt-3">${description}</span>
                     <span class="big pt-3">${temp}°</span>
                 </div>
-                <div class="col-6 d-flex align-items-center pl-0">${icon}</div>
+                <div class="col-7 d-flex align-items-center">${icon}</div>
               </div>
             </div>
       </div>
